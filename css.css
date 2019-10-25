@@ -1,0 +1,202 @@
+html, body {
+    font-family: "PingFang TC", "Noto Sans TC", "微軟正黑體", Ubuntu, sans-serif;
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+}
+
+.day-btn {
+    width: 100%;
+    font-size: 13px;
+    cursor: pointer;
+    padding: 25px 0;
+}
+
+.day-mobile-btn {
+    width: 100%;
+    font-size: 13px;
+    cursor: pointer;
+    padding: 10px 0;
+}
+
+.day-mobile-btn-active {
+    cursor: pointer;
+    font-weight: 800;
+    color: #ff0000;
+    text-decoration: underline;
+}
+
+.date-table,
+.tab-table {
+    border-collapse: collapse;
+    width: 750px;
+    display: flex;
+    margin: 0 auto;
+}
+
+.date-table td,
+.tab-table td {
+    border: 1px solid #007bff;
+    margin: 0;
+    padding: 5px;
+    /* width: 10%; */
+}
+
+.day-btn,
+.time-btn,
+.all-btn,
+.morn-btn,
+.th-btn,
+.noon-btn {
+    cursor: pointer;
+}
+
+.hide-morn-btn,
+.hide-noon-btn {
+    color: green;
+    cursor: pointer;
+    font-weight: 800;
+    text-decoration: underline;
+}
+
+.mobile-show-morn-btn,
+.mobile-show-noon-btn,
+.un-mobile-all-btn,
+.show-morn-btn,
+.show-noon-btn,
+.un-day-btn,
+.un-time-btn,
+.un-all-btn,
+.un-morn-btn,
+.un-th-btn,
+.un-noon-btn {
+    cursor: pointer;
+    font-weight: 800;
+    color: #ff0000;
+    text-decoration: underline;
+}
+
+.tab-active {
+    font-weight: 800;
+    color: #ff0000;
+    text-decoration: underline;
+}
+
+.selection {
+    position: absolute;
+}
+
+.active {
+    background-color: #EBC;
+}
+
+.noon1 {
+    width: 30px;
+    background: #ff0000;
+    height: 300px;
+    border-radius: 50px;
+}
+
+.middle {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+
+.date-row {
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.center {
+    text-align: center;
+}
+
+.date-choose-btn {
+    display: inline-block;
+    width: 130px;
+    text-align: center;
+    font-size: 15px;
+    cursor: pointer;
+    border: 1px #ccc solid;
+    padding: 5px 10px;
+    margin: 5px;
+    background: #fff;
+    color: #000;
+    border-radius: 30px;
+}
+
+.dropped {
+    background: #fff !important;
+    color: #ff0000 !important;
+    text-align: center;
+}
+
+.line {
+    height: 1px;
+    background: #ccc;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.mm {
+    color: #fff;
+    height: 250px;
+    width: 30px;
+    border-radius: 30px;
+}
+
+.menu {
+    width: 660px;
+    margin: 0 auto 20px auto;
+    text-align: center;
+    /* border: 1px #000 solid; */
+    display: inline-flex;
+}
+
+.desktop {
+    display: block;
+}
+
+.mobile {
+    display: none;
+}
+
+@media screen and (max-width: 767px) {
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    .mm {
+        height: 500px;
+    }
+
+    .date-choose-btn {
+        width: 135px;
+    }
+
+    .date-table,
+    .tab-table {
+        padding: 0 10px;
+        width: 100%;
+    }
+
+    .menu {
+        width: 100%;
+    }
+}
